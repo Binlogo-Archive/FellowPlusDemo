@@ -1,0 +1,104 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="8191" systemVersion="15A284" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES">
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="8154"/>
+        <capability name="Constraints with non-1.0 multipliers" minToolsVersion="5.1"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view contentMode="scaleToFill" id="c3R-J0-PXU" customClass="BYSegmentedControl">
+            <rect key="frame" x="0.0" y="0.0" width="320" height="44"/>
+            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+            <subviews>
+                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="vin-sp-MMH">
+                    <rect key="frame" x="105" y="5" width="1" height="35"/>
+                    <animations/>
+                    <color key="backgroundColor" white="0.66666666666666663" alpha="1" colorSpace="calibratedWhite"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="35" id="CLf-ZP-5YF"/>
+                        <constraint firstAttribute="width" constant="1" id="JTb-hm-idJ"/>
+                    </constraints>
+                </view>
+                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="0Wr-eP-nZx">
+                    <rect key="frame" x="213" y="5" width="1" height="35"/>
+                    <animations/>
+                    <color key="backgroundColor" white="0.66666666666666663" alpha="1" colorSpace="calibratedWhite"/>
+                    <constraints>
+                        <constraint firstAttribute="width" constant="1" id="GJw-IU-wWg"/>
+                        <constraint firstAttribute="height" constant="35" id="rQU-fn-XgY"/>
+                    </constraints>
+                </view>
+                <button opaque="NO" tag="100" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="cgD-i5-y0b">
+                    <rect key="frame" x="26" y="7" width="45" height="30"/>
+                    <animations/>
+                    <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+                    <fontDescription key="fontDescription" type="system" pointSize="15"/>
+                    <color key="tintColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+                    <state key="normal" title="活跃度">
+                        <color key="titleColor" white="0.33333333333333331" alpha="1" colorSpace="calibratedWhite"/>
+                    </state>
+                    <state key="selected">
+                        <color key="titleColor" red="1" green="0.50196081400000003" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                    </state>
+                    <connections>
+                        <action selector="changeSelectedIndex:" destination="c3R-J0-PXU" eventType="touchUpInside" id="mm5-QV-z7V"/>
+                    </connections>
+                </button>
+                <button opaque="NO" tag="300" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="meg-i0-um5">
+                    <rect key="frame" x="245" y="7" width="45" height="30"/>
+                    <animations/>
+                    <fontDescription key="fontDescription" type="system" pointSize="15"/>
+                    <color key="tintColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+                    <state key="normal" title="匹配度">
+                        <color key="titleColor" white="0.33333333333333331" alpha="1" colorSpace="calibratedWhite"/>
+                    </state>
+                    <state key="selected">
+                        <color key="titleColor" red="1" green="0.50196081400000003" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                    </state>
+                    <connections>
+                        <action selector="changeSelectedIndex:" destination="c3R-J0-PXU" eventType="touchUpInside" id="gbL-8E-oNe"/>
+                    </connections>
+                </button>
+                <button opaque="NO" tag="200" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="SSB-Rq-mOa">
+                    <rect key="frame" x="130" y="7" width="60" height="30"/>
+                    <animations/>
+                    <fontDescription key="fontDescription" type="system" pointSize="15"/>
+                    <color key="tintColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+                    <state key="normal" title="最新加入">
+                        <color key="titleColor" white="0.33333333333333331" alpha="1" colorSpace="calibratedWhite"/>
+                    </state>
+                    <state key="selected">
+                        <color key="titleColor" red="1" green="0.50196081400000003" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                    </state>
+                    <connections>
+                        <action selector="changeSelectedIndex:" destination="c3R-J0-PXU" eventType="touchUpInside" id="Aly-2L-YgO"/>
+                    </connections>
+                </button>
+            </subviews>
+            <animations/>
+            <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+            <constraints>
+                <constraint firstItem="meg-i0-um5" firstAttribute="centerX" secondItem="c3R-J0-PXU" secondAttribute="centerX" multiplier="1.67" id="467-Ck-HOR"/>
+                <constraint firstItem="vin-sp-MMH" firstAttribute="centerY" secondItem="c3R-J0-PXU" secondAttribute="centerY" id="7Na-3M-96g"/>
+                <constraint firstItem="0Wr-eP-nZx" firstAttribute="centerY" secondItem="c3R-J0-PXU" secondAttribute="centerY" id="FLS-79-f70"/>
+                <constraint firstItem="cgD-i5-y0b" firstAttribute="centerX" secondItem="c3R-J0-PXU" secondAttribute="centerX" multiplier="0.3" id="HfU-Xd-YUa"/>
+                <constraint firstItem="SSB-Rq-mOa" firstAttribute="centerX" secondItem="c3R-J0-PXU" secondAttribute="centerX" id="OYO-jP-CqO"/>
+                <constraint firstItem="meg-i0-um5" firstAttribute="centerY" secondItem="c3R-J0-PXU" secondAttribute="centerY" id="Ozn-O1-wFH"/>
+                <constraint firstItem="vin-sp-MMH" firstAttribute="centerX" secondItem="c3R-J0-PXU" secondAttribute="centerX" multiplier="0.66" id="Zoy-yp-8A5"/>
+                <constraint firstItem="SSB-Rq-mOa" firstAttribute="centerY" secondItem="c3R-J0-PXU" secondAttribute="centerY" id="jmk-6W-gMA"/>
+                <constraint firstItem="cgD-i5-y0b" firstAttribute="centerY" secondItem="c3R-J0-PXU" secondAttribute="centerY" id="uPn-f5-pdh"/>
+                <constraint firstItem="0Wr-eP-nZx" firstAttribute="centerX" secondItem="c3R-J0-PXU" secondAttribute="centerX" multiplier="1.33" id="uyS-Xv-a4n"/>
+            </constraints>
+            <nil key="simulatedStatusBarMetrics"/>
+            <freeformSimulatedSizeMetrics key="simulatedDestinationMetrics"/>
+            <connections>
+                <outlet property="activeBtn" destination="cgD-i5-y0b" id="akN-0p-OHm"/>
+                <outlet property="fitBtn" destination="meg-i0-um5" id="vlX-fc-S4W"/>
+                <outlet property="newestBtn" destination="SSB-Rq-mOa" id="jNF-7p-a1O"/>
+            </connections>
+            <point key="canvasLocation" x="425" y="251"/>
+        </view>
+    </objects>
+</document>
